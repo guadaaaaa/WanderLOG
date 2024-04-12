@@ -1,5 +1,5 @@
 <?php 
-    require_once '../includes/header.php';
+    require_once 'includes/header.php';
     include('connect.php');
 ?>
 
@@ -13,11 +13,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
               rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
               crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div>
-            <img src="../Resources/about.png" style="width: 2000px;">
+            <img src="Resources/about.png" style="width: 2000px;">
         </div>
         
         <h1 style="text-align: center; margin-top: 10px; font-weight: 800;">About Us</h1>
@@ -27,7 +27,7 @@
             <div>
                 <img src="https://cdn-icons-png.flaticon.com/512/6833/6833605.png" class="centered-image" style="height: 200px; width: 200px;">
                 <br>
-                <img src="../Resources/socials.png" class="socials">
+                <img src="Resources/socials.png" class="socials">
                 <h4><b>NICOLE EJARES</b></h4>
                 <p>WanderLOG President</p>
                 <hr style="width: 25%; margin: 0 auto;">
@@ -39,7 +39,7 @@
             <div>
                 <img src="https://cdn-icons-png.flaticon.com/512/6833/6833605.png" class="centered-image" style="height: 200px; width: 200px;">
                 <br>
-                <img src="../Resources/socials.png" class="socials">
+                <img src="Resources/socials.png" class="socials">
                 <h4><b>GUADALUE NIÑA MARIE L. OBANDO</b></h4>
                 <p>WanderLOG Vice-President</p>
                 <hr style="width: 25%; margin: 0 auto;">
@@ -49,13 +49,9 @@
                     discoveries, my vibrant energy and open-mindedness make every escapade an unforgettable journey.</p>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
     </body>
 </html>
 
 <?php 
-    require_once '../includes/footer.php';
+    require_once 'includes/footer.php';
 ?>

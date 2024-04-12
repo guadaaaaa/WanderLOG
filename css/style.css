@@ -129,14 +129,14 @@ body {
     margin-top: 150px;
   }
   #register_body {
-    background-image:url("Resources/bgLogIn.png");
+    background-image:url("../Resources/bgLogIn.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   #login_body {
-    background-image: url("Resources/bgLogIn.png");
+    background-image: url("../Resources/bgLogIn.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
