@@ -1,5 +1,5 @@
 <?php 
-    require_once 'includes/header.php';
+    require_once 'includes/header1.php';
     include 'connect.php';
     session_start();
 ?>
@@ -35,7 +35,7 @@
         <input type="password" id="txtpassword" name="txtpassword" placeholder="Enter your password" required>
         <br>
         <input type="submit" name="btnLogin"value="Log In">
-        <p>Don't have an account? <a href="php/register.php">Register</a></p>
+        <p>Don't have an account? <a href="register.php">Register</a></p>
     </form>
 </body>
 </html>
@@ -59,7 +59,7 @@
 		}else if(password_verify($pwd, $row[3])) {
 			$_SESSION['username']=$row[2];
             $_SESSION['acctid']=$row[0];
-			header("location: index.php");
+			header("location: landingpage.php");
 		}else{
             echo "<script language='javascript'>
 						alert('Incorrect password');

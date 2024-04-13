@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarNav" style="align-items: flex-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="landingpage.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="about.php">About Us</a>
@@ -27,14 +27,11 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="contact.php">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Log In</a>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="entries.php">Dashboard</a>
                     </li>
                     <li class="nav-item"> 
-                        <a class="nav-link" href="register.php">Sign Up</a>
-                    </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="entries.php">Entries</a>
+                        <a class="nav-link" href="index.php">Sign Out</a>
                     </li>
                 </ul>
             </div>

@@ -1,5 +1,5 @@
 <?php 
-    require_once 'includes/header.php';
+    require_once 'includes/header1.php';
     include 'connect.php';
     session_start();
 ?>
@@ -71,7 +71,9 @@
 			echo "<script language='javascript'>
 						alert('New record saved.');
 				  </script>";
-            header("location: index.php");    
+            $_SESSION['username']=$row[2];
+            $_SESSION['acctid']=$row[0];
+            header("location: landingpage.php");    
 		}else{
 			echo "<script language='javascript'>
 						alert('Username already existing');
