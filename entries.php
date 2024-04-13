@@ -110,16 +110,17 @@
                             echo '</div>';
                         }
                     }
-                    
-                ?>
-                <?php
+
                     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btnDelete'])){
                         if(isset($_POST['btnDelete'])){
                             $id = $_POST["id"];
                             $query = "DELETE from tblentry where entryid=$id";
                             $mysqli->query($query);
+                            echo '<script> location.replace("entries.php"); </script>';
                         }
                     }
+                    
+                    
                 ?>
             </div>
         </div>
