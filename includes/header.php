@@ -31,6 +31,9 @@
                         <a class="nav-link" href="entries.php">Dashboard</a>
                     </li>
                     <li class="nav-item"> 
+                        <a class="nav-link" href="review.php">Reviews</a>
+                    </li>
+                    <li class="nav-item"> 
                         <a class="nav-link" href="index.php">Sign Out</a>
                     </li>
                 </ul>
