@@ -1,7 +1,6 @@
 <?php 
     require_once 'includes/header1.php';
     include 'connect.php';
-    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -69,5 +68,5 @@
 ?>
 
 <?php 
-    require_once 'includes/footer.php';
+    require_once 'includes/footeryou.php';
 ?>

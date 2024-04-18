@@ -1,7 +1,6 @@
 <?php 
     require_once 'includes/header1.php';
     include 'connect.php';
-    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,6 +37,10 @@
         <br>
         <input type = "text" name = "txtgender" placeholder="Enter gender" required></input>
         <br>
+        <label for="txtbdate">Birthdate: </label>
+        <input type="date" name = "txtbdate" required>
+        <br>
+        <br>
         <input type="password" name = "txtpassword" placeholder = "Enter password" required></input>
         <br>
         <input type = "submit" name="btnRegister" value = "Register"></input>
@@ -52,6 +55,7 @@
 		$fname=$_POST['txtfirstname'];		
 		$lname=$_POST['txtlastname'];
         $gender=$_POST['txtgender'];
+        $bdate=$_POST['txtbdate'];
 		
 		
 		//for tbluseraccount
@@ -64,16 +68,21 @@
 		$result = mysqli_query($connection,$sql2);
 		$row = mysqli_num_rows($result);
 		if($row == 0){
-            $sql1 ="Insert into tbluserprofile(firstname,lastname,gender) values('".$fname."','".$lname."','".$gender."')";
+            $sql1 ="Insert into tbluserprofile(firstname,lastname,gender,birthdate) values('".$fname."','".$lname."','".$gender."','".$bdate."')";
 		    mysqli_query($connection,$sql1);
 			$sql ="Insert into tbluseraccount(emailadd,username,password,usertype) values('".$email."','".$uname."','".$pword."','1')";
 			mysqli_query($connection,$sql);
 			echo "<script language='javascript'>
 						alert('New record saved.');
 				  </script>";
-            $_SESSION['username']=$row[2];
-            $_SESSION['acctid']=$row[0];
-            header("location: landingpage.php");    
+            $sql22 ="SELECT * FROM tbluseraccount WHERE username='$uname'";
+            $result2 = mysqli_query($connection,$sql22);
+            if ($row2 = mysqli_fetch_assoc($result2)) {
+                // Set session variables
+                $_SESSION['username'] = $row2['username'];
+                $_SESSION['acctid'] = $row2['acctid'];
+                header("location: landingpage.php");
+            }
 		}else{
 			echo "<script language='javascript'>
 						alert('Username already existing');

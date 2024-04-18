@@ -1,7 +1,6 @@
 <?php 
     require_once 'includes/header.php';
     include('connect.php');
-    session_start();
 ?>
 
 <!DOCTYPE html>
